@@ -22,18 +22,18 @@ apt-get upgrade
 
 echo "We will now make recommended installs"
 sleep 5
-#apt-get -y install -f
+apt-get -y install -f
 
-#apt-get -y install wget
-#apt-get -y install curl
-#apt-get -y install synaptic
+apt-get -y install wget
+apt-get -y install curl
+apt-get -y install synaptic
 #apt-get --assume-yes install y-ppa-manager
 
 cd ~/Downloads && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf - dropbox.deb 
 ~/Downloads/.dropbox-dist/dropboxd
-apt-get -y kate
+apt-get -y install kate
 
-apt-get -y chromium-browser
+apt-get -y install  chromium-browser
 
 
 #install pycharm
@@ -55,24 +55,25 @@ sudo apt-get install oracle-java8-installer
 
 
 
-#apt-get -y install zlib1g-dev 
-#apt-get -y install python-setuptools
-#apt-get -y install build-essential
-#apt-get -y install libssl-dev
-#apt-get -y install libxml2-dev
-#apt-get -y install openssl
-#apt-get -y install libxslt1-dev
-#apt-get -y install python-dev
-#apt-get -y install libzmq-dev
-#apt-get -y install libpq-dev
-#apt-get -y install iptables
-#apt-get -y install tree
-#apt-get -y install pylint
-#apt-get -y install openjdk-7-jdk
-#apt-get -y install virtualenvwrapper
-#apt-get -y install apache2
+apt-get -y install zlib1g-dev 
+apt-get -y install python-setuptools
+apt-get -y install build-essential
+apt-get -y install libssl-dev
+apt-get -y install libxml2-dev
+apt-get -y install openssl
+apt-get -y install libxslt1-dev
+apt-get -y install python-dev
+apt-get -y install libzmq-dev
+apt-get -y install libpq-dev
+apt-get -y install iptables
+apt-get -y install tree
+apt-get -y install pylint
+apt-get -y install openjdk-7-jdk
+apt-get -y install virtualenvwrapper
+apt-get -y install apache2
+apt-get -y install python-pip
 
-cd ~/Downloads/Python-2.7.10 && curl http://bootstrap.pypa.io/get-pip.py > get-pip.py
+
 
 #apt-get -y install -f
 #apt-get -y update 
