@@ -27,6 +27,7 @@ apt-get -y install -f
 apt-get -y install wget
 apt-get -y install curl
 apt-get -y install synaptic
+sudo apt-get install android-tools-adb
 #apt-get --assume-yes install y-ppa-manager
 
 cd ~/Downloads && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf - dropbox.deb 
