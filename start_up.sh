@@ -48,6 +48,8 @@ sudo apt-get -y install oracle-java8-installer
 
 
 
+sudo apt-get install synaptic vlc gimp gimp-data gimp-plugin-registry gimp-data-extras y-ppa-manager bleachbit openjdk-7-jre oracle-java8-installer flashplugin-installer unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj 
+
 
 sudo apt-get -y install emacs
 sudo apt-get -y install git
@@ -77,7 +79,17 @@ sudo apt-get -y install -f
 sudo apt-get -y update 
 sudo apt-get -y upgrade 
 
-echo " ALL DONE :) "
+
+
+#install no ip client
+cd /usr/local/src/
+sudo wget http://www.no-ip.com/client/linux/noip-duc-linux.tar.gz
+sudo tar xf noip-duc-linux.tar.gz
+cd noip-2.1.9-1/
+sudo make install
+
+
+
 
 #reboot
 
