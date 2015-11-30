@@ -56,3 +56,59 @@
             ;; fix tab
             (local-set-key "\C-y" 'yank)))
 
+
+;; tab autocomplete emacs Lisp
+(setq tab-always-indent 'complete)
+(add-to-list 'completion-styles 'initials t)
+
+
+;;USER DEFINED FUNCTIONS
+
+;; (defun function-name (arguments…)
+;;   "optional-documentation…"
+;;   (interactive argument-passing-info)     ; optional
+;;   body…)
+
+;; python workspace
+
+
+(defun python-workspace ()
+  "opens up my personal emacs workspace
+____________________________________
+|      TEXT.py     | python terminal  | 
+|                  |                  |
+|                  |                  |
+|                  |                  |
+|                  |                  | 
+|                  |                  |
+|                  |                  |
+|                  |------------------|
+|                  | shell terminal   |
+|                  |                  |
+|                  |                  |
+|                  |                  |
+|                  |                  |
+|                  |                  |
+|                  |                  |
+|__________________|__________________|
+"
+  (interactive)
+  (split-window-right)
+  (next-multiframe-window)
+  (shell"python_shell")
+  (insert "python")
+  (execute-kbd-macro "\r")
+  (split-window-below)
+  (next-multiframe-window)
+  (shell "bash_shell")
+)
+
+(defun python-template()
+  (interactive)
+  (insert "##########################")
+  (insert "\n")
+  (insert (getenv "USER"))
+  (insert (format-time-string "%Y-%m-%d"))
+
+)
+
