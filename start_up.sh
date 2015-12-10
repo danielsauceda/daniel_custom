@@ -50,6 +50,7 @@ sudo apt-get -y install oracle-java8-installer
 
 sudo apt-get install synaptic vlc gimp gimp-data gimp-plugin-registry gimp-data-extras y-ppa-manager bleachbit openjdk-7-jre oracle-java8-installer flashplugin-installer unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj 
 
+sudo apt-get -y install gnutls-bin
 sudo apt-get -y install handbrake
 sudo apt-get -y install emacs
 sudo apt-get -y install git
