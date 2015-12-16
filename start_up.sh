@@ -12,7 +12,7 @@ echo "your sudo settings"
 
 echo "we will now add recommended repositories"
 sleep 5
-
+sudo add-apt-repository ppa:texlive-backports/ppa
 sudo add-apt-repository ppa:nilarimogard/webupd8
 sudo add-apt-repository ppa:webupd8team/y-ppa-manager
 sudo add-apt-repository ppa:ubuntu-wine/ppa
@@ -76,8 +76,8 @@ sudo apt-get -y install python-pip
 sudo apt-get -y install texlive-full
 sudo apt-get -y install dos2unix
 sudo apt-get -y install libav-tools
-
-
+sudo apt-get -y install latex-beamer
+sudo apt-get install impressive
 
 sudo apt-get -y install -f
 sudo apt-get -y update 
