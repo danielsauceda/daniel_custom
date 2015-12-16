@@ -73,8 +73,8 @@ sudo apt-get -y install openjdk-7-jdk
 sudo apt-get -y install virtualenvwrapper
 sudo apt-get -y install apache2
 sudo apt-get -y install python-pip
-
-
+sudo apt-get -y install texlive-full
+sudo apt-get -y install dos2unix
 
 sudo apt-get -y install -f
 sudo apt-get -y update 
