@@ -77,7 +77,9 @@ sudo apt-get -y install texlive-full
 sudo apt-get -y install dos2unix
 sudo apt-get -y install libav-tools
 sudo apt-get -y install latex-beamer
-sudo apt-get install impressive
+sudo apt-get -y install impressive
+sudo apt-get -y install pixz
+
 
 sudo apt-get -y install -f
 sudo apt-get -y update 
