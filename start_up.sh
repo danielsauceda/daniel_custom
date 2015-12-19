@@ -79,11 +79,17 @@ sudo apt-get -y install libav-tools
 sudo apt-get -y install latex-beamer
 sudo apt-get -y install impressive
 sudo apt-get -y install pixz
-
+sudo apt-get -y install libfreetype6-dev libxft-dev
 
 sudo apt-get -y install -f
 sudo apt-get -y update 
 sudo apt-get -y upgrade 
+
+sudo pip install xlrd
+sudo pip install multiprocessing
+sudo pip install matplotlib
+
+
 
 
 
