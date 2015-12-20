@@ -80,6 +80,7 @@ sudo apt-get -y install latex-beamer
 sudo apt-get -y install impressive
 sudo apt-get -y install pixz
 sudo apt-get -y install libfreetype6-dev libxft-dev
+sudo apt-get -y install powertop
 
 sudo apt-get -y install -f
 sudo apt-get -y update 
