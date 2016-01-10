@@ -84,6 +84,7 @@ sudo apt-get -y install powertop
 sudo apt-get -y install testdisk
 sudo apt-get -y install lvm2
 sudo apt-get -y install ntfsprogs
+sudo apt-get -y install screen
 
 sudo apt-get -y install -f
 sudo apt-get -y update 
