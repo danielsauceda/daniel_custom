@@ -12,12 +12,12 @@ echo "your sudo settings"
 
 echo "we will now add recommended repositories"
 sleep 5
-sudo add-apt-repository ppa:texlive-backports/ppa
-sudo add-apt-repository ppa:nilarimogard/webupd8
-sudo add-apt-repository ppa:webupd8team/y-ppa-manager
-sudo add-apt-repository ppa:ubuntu-wine/ppa
-sudo apt-add-repository ppa:xorg-edgers/ppa
-sudo apt-add-repository ppa:ubuntu-x-swat/x-updates
+sudo add-apt-repository -y ppa:texlive-backports/ppa
+sudo add-apt-repository -y  ppa:nilarimogard/webupd8
+sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
+sudo add-apt-repository -y ppa:ubuntu-wine/ppa
+sudo apt-add-repository -y ppa:xorg-edgers/ppa
+sudo apt-add-repository -y ppa:ubuntu-x-swat/x-updates
 sudo apt-get update
 sudo apt-get -y install nvidia-current nvidia-settings
 
@@ -27,7 +27,7 @@ sudo -E wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www
 echo "We will now update and upgrade your packages"
 sleep 5
 sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get -y upgrade
 
 echo "We will now make recommended installs"
 sleep 5
@@ -85,6 +85,8 @@ sudo apt-get -y install testdisk
 sudo apt-get -y install lvm2
 sudo apt-get -y install ntfsprogs
 sudo apt-get -y install screen
+sudo apt-get -y install htop
+
 
 sudo apt-get -y install -f
 sudo apt-get -y update 
@@ -99,11 +101,11 @@ sudo pip install matplotlib
 
 
 #install no ip client
-cd /usr/local/src/
-sudo wget http://www.no-ip.com/client/linux/noip-duc-linux.tar.gz
-sudo tar xf noip-duc-linux.tar.gz
-cd noip-2.1.9-1/
-sudo make install
+# cd /usr/local/src/
+# sudo wget http://www.no-ip.com/client/linux/noip-duc-linux.tar.gz
+# sudo tar xf noip-duc-linux.tar.gz
+# cd noip-2.1.9-1/
+# sudo make install
 
 
 
