@@ -24,6 +24,7 @@ sudo apt-get -y install nvidia-current nvidia-settings
 
 sudo -E wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list && sudo apt-get --quiet update && sudo apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring && sudo apt-get --quiet update
 
+
 echo "We will now update and upgrade your packages"
 sleep 5
 sudo apt-get update
