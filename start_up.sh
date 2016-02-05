@@ -12,7 +12,6 @@ echo "your sudo settings"
 
 echo "we will now add recommended repositories"
 sleep 5
-sudo add-apt-repository -y ppa:texlive-backports/ppa
 sudo add-apt-repository -y  ppa:nilarimogard/webupd8
 sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
 sudo add-apt-repository -y ppa:ubuntu-wine/ppa
