@@ -2,9 +2,6 @@
 
 
 
-
-
-
 clear
 echo "welcome, $USER to the start up script"
 
@@ -12,7 +9,7 @@ echo "your sudo settings"
 
 echo "we will now add recommended repositories"
 sleep 5
-sudo add-apt-repository -y  ppa:nilarimogard/webupd8
+sudo add-apt-repository -y ppa:nilarimogard/webupd8
 sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
 sudo add-apt-repository -y ppa:ubuntu-wine/ppa
 sudo apt-add-repository -y ppa:xorg-edgers/ppa
@@ -86,7 +83,7 @@ sudo apt-get -y install lvm2
 sudo apt-get -y install ntfsprogs
 sudo apt-get -y install screen
 sudo apt-get -y install htop
-
+sudo apt-get -y install gfortran libopenblas-dev liblapack-dev
 
 sudo apt-get -y install -f
 sudo apt-get -y update 
